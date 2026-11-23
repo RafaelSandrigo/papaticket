@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-lime: #c6ff2e;
+  --color-lime-dark: #a8e000;
+  --color-ink: #0a0a0a;
+}
+
+body {
+  @apply bg-white text-ink antialiased;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0a0a0a 0%, #0a0a0a 45%, #2a3800 100%);
+}
+
+.race-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.race-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-ink);
+  box-shadow: 0 18px 40px -18px rgba(10, 10, 10, 0.35), 0 0 0 1px rgba(198, 255, 46, 0.6);
+}
+
+.cta-glow {
+  box-shadow: 0 0 0 0 rgba(198, 255, 46, 0);
+  transition: box-shadow 0.25s ease, transform 0.15s ease, background-color 0.2s ease;
+}
+
+.cta-glow:hover:not(:disabled) {
+  box-shadow: 0 8px 28px -6px rgba(198, 255, 46, 0.85);
+}
+
+.cta-glow:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.glass {
+  background: rgba(10, 10, 10, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
