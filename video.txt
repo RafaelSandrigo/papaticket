@@ -1,0 +1,4 @@
+Video Front mostrando o sistema funcionando:
+https://www.youtube.com/watch?v=tpFqfmt61-c
+Video mostrando o codigo, explicando laravel:
+https://www.youtube.com/watch?v=8IBsagujkXk
